@@ -22,6 +22,11 @@ public class ArrayUtil {
         System.out.println();
     }
 
+    public static void printArr(int arr[], String dir){
+        Arrays.stream(arr).forEach(value -> System.out.print(value + " "));
+        System.out.println();
+    }
+
     public static void printArr(int arr[], int s, int length){
         for(int i = s; i < s + length; i++){
             System.out.print(arr[i] + " ");
